@@ -1,0 +1,93 @@
+package trangacademy.stepDefinitions;
+
+import java.io.IOException;
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+
+import Trang.Testcomponent.BaseTest;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import trangacademy.trangselenium.pageobjects.CheckoutPage;
+import trangacademy.trangselenium.pageobjects.ConfirmationPage;
+import trangacademy.trangselenium.pageobjects.LandingPage;
+import trangacademy.trangselenium.pageobjects.ProductCatalogue;
+import trangacademy.trangselenium.pageobjects.CartPage;
+
+public class StepDefinitionImpl extends BaseTest {
+
+    public LandingPage landingPage;
+    public ProductCatalogue productCatalogue;
+    public ConfirmationPage confirmationPage;
+    public CartPage cartPage;
+
+    @Given("I landed on Ecommerce Page")
+    public void iLandedOnEcommercePage() throws IOException {
+        landingPage = launchApplication();
+    }
+
+    @Given("Logged in with the username {string} and password {string}")
+    public void loggedInWithUsernameAndPassword(String username, String password) {
+        productCatalogue = landingPage.loginApplication(username, password);
+    }
+
+    @When("I add product {string} to Cart")
+    public void iAddProductToCart(String productName) throws InterruptedException {
+        List<WebElement> products = productCatalogue.getProductList();
+        productCatalogue.addProductToCart(productName);
+    }
+    @When("^Checkout (.+) and submit the order$")
+    public void checkoutSubmitOrder(String productName)
+    {
+    	Boolean match = cartPage.VerifyProductDisplay( productName);
+		Assert.assertTrue(match);
+		CheckoutPage checkoutPage = cartPage.gotToCheckOutPage();
+		checkoutPage.selectCountry("india");
+
+		 confirmationPage = checkoutPage.submitOrder();
+    }
+    @Then("{string} message is displayed on ConfirmationPage")
+    public void messageDisplayedConfirmationPage(String string) {
+    	String confirmMessage = confirmationPage.getConfirmationMessage();
+		AssertJUnit.assertTrue(confirmMessage.equalsIgnoreCase(string));
+    }
+    
+    @Then ("^\"([^\"]*)\"message is displayed")
+    public void somethingMessageIsDisplayed (String strArg1) throws Throwable  {
+    	Assert.assertEquals(strArg1,landingPage.getErrorMessage());
+    	driver.close();
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

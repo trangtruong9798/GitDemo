@@ -1,0 +1,10 @@
+
+public class PS {
+public void doThis() {
+	System.out.println("I am here");
+}
+	public static void main (String[] args) {
+		System.out.println("I am here");
+	}
+	
+}

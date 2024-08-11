@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="TestNGTutorial"/>
+			<item value="StreamTutorial"/>
+			<item value="Test1"/>
+			<item value="TestSeleniumUca"/>
+			<item value="Selenium1st"/>
+		</list>
+		<list key="name">
+			<item value="TestNGTutorial"/>
+			<item value="Test1"/>
+		</list>
+		<list key="artifactId">
+			<item value="TestNGTutorial"/>
+			<item value="StreamTutorial"/>
+			<item value="Test1"/>
+			<item value="TestSeleniumHe"/>
+			<item value="Selenium1st"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="E:\javastudy\MavenDemo"/>
+			<item value="E:\javastudy\MavenExample"/>
+			<item value="E:\javastudy\Test1\pom.xml"/>
+			<item value="E:\javastudy\TestSelenium"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="trangacademy.July"/>
+			<item value="trangacademy.trangselenium"/>
+			<item value="trangacademy.trangseleniumframworkdesign"/>
+			<item value="trangacademy.Seleniumframworkdesign"/>
+			<item value="rahulshettyacademy.seleniumFrameworkDesign"/>
+			<item value="rahylshettyacademy.SeleniumFrameworkDesign"/>
+		</list>
+		<list key="groupId">
+			<item value="trangacademy"/>
+			<item value="rahulshettyacademy"/>
+			<item value="rahylshettyacademy"/>
+		</list>
+		<list key="artifactId">
+			<item value="July"/>
+			<item value="trangselenium"/>
+			<item value="trangseleniumframworkdesign"/>
+			<item value="Seleniumframworkdesign"/>
+			<item value="seleniumFrameworkDesign"/>
+			<item value="SeleniumFrameworkDesign"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="665"/>
+		<item key="x" value="720"/>
+		<item key="y" value="72"/>
+	</section>
+</section>

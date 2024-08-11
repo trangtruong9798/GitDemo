@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;trangacademy.trangselenium.pageobjects.cartPage.java&apos; to &apos;CartPage.java&apos;&#x0D;&#x0A;- Original project: &apos;trangselenium&apos;&#x0D;&#x0A;- Original element: &apos;trangacademy.trangselenium.pageobjects.cartPage.java&apos;&#x0D;&#x0A;- Renamed element: &apos;trangacademy.trangselenium.pageobjects.CartPage.java&apos;" description="Rename compilation unit &apos;cartPage.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;trangacademy.trangselenium.pageobjects{cartPage.java" name="CartPage.java" references="false" stamp="1722741646396" version="1.0"/>
+</session>

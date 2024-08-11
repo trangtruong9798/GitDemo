@@ -1,0 +1,42 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.util.List;
+public class calender {
+	public static void main (String [] arg) throws InterruptedException  {
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver-win64 (2)\\chromedriver-win64\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver(options);
+		driver.get("https://www.path2usa.com/travel-companion/");
+
+	driver.findElement(By.xpath("//input[@id='form-field-travel_comp_date']")).sendKeys(Keys.RETURN);
+	Thread.sleep(5000);
+
+driver.findElement(By.className("flatpickr-next-month")).sendKeys(Keys.RETURN);
+while(!driver.findElement(By.xpath("//span[@class='cur-month']")).getText().contains("April")) {	
+//while(!driver.findElement(By.cssSelector("div[class='flatpickr-month'] span[class='cur-month']")).getText().contains("April")) {
+driver.findElement(By.xpath("//body/div[13]/div[1]/span[2]")).sendKeys(Keys.RETURN);		
+//driver.findElement(By.cssSelector("div[class='flatpickr-month'] span[class='flatpickr-next-month']")).sendKeys(Keys.RETURN);
+}
+	List<WebElement> dates= driver.findElements(By.cssSelector("span[class='flatpickr-day ']"));
+	//Grab common attribute//Put into list and iterate
+	int count=driver.findElements(By.cssSelector("span[class='flatpickr-day ']")).size();
+
+	for(int i=0;i<count;i++)
+	{
+	String text=driver.findElements(By.cssSelector("span[class='flatpickr-day ']")).get(i).getText();
+	if(text.equalsIgnoreCase("29"))
+	{
+	driver.findElements(By.cssSelector("span[class='flatpickr-day ']")).get(i).sendKeys(Keys.RETURN);
+	}
+
+	}
+	}
+
+	}
